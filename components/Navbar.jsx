@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
@@ -19,6 +20,8 @@ const Navbar = () => (
       <Image
         src="/search.svg"
         alt="search"
+        width={350}
+        height={500}
         className="w-[24px] h-[24px] object-contain"
       />
       <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
@@ -27,6 +30,8 @@ const Navbar = () => (
       <Image
         src="/menu.svg"
         alt="menu"
+        width={350}
+        height={500}
         className="w-[24px] h-[24px] object-contain"
       />
     </div>
