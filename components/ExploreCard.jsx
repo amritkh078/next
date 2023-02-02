@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
@@ -16,6 +17,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     <Image
       src={imgUrl}
       alt="planet-04"
+      width={350}
+      height={500}
       className="absolute w-full h-full object-cover rounded-[24px]"
     />
     {active !== id ? (
@@ -30,6 +33,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
           <Image
             src="/headset.svg"
             alt="headset"
+            width={350}
+            height={500}
             className="w-1/2 h-1/2 object-contain"
           />
         </div>
