@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { newFeatures } from '../constants';
@@ -33,9 +34,11 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
+        <Image
           src="/whats-new.png"
           alt="get-started"
+          width={350}
+          height={500}
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
