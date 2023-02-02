@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { socials } from '../constants';
 
 import styles from '../styles';
@@ -23,6 +24,8 @@ const Footer = () => (
           <Image
             src="/headset.svg"
             alt="headset"
+            width={350}
+            height={500}
             className="w-[24px] h-[24px] object-contain"
           />
           <span className="font-normal text-[16px] text-white">
@@ -48,6 +51,8 @@ const Footer = () => (
                 key={social.name}
                 src={social.url}
                 alt={social.name}
+                width={350}
+                height={500}
                 className="w-[24px] h-[24px] object-contain cursor-pointer"
               />
             ))}
